@@ -1,0 +1,11 @@
+pip install pytest
+pip install --upgrade pip
+pip install -r requirements.txt
+
+pytest
+pytest -v
+pytest -s
+pytest -s -v
+pytest test_pytest.py
+
+pytest --version
