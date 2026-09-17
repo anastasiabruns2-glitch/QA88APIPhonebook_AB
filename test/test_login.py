@@ -2,6 +2,8 @@ import pytest
 from config import *
 
 class TestLogin:
+
+    @pytest.mark.smoke
     def test_login_positive(self, session, login_url, registered_user):
         print(registered_user)
         body = {

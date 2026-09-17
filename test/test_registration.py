@@ -6,6 +6,7 @@ fake = Faker()
 
 class TestRegistration:
 
+    @pytest.mark.smoke
     def test_registration_positive(self, session, registration_url, random_user):
         print(random_user)
         body = {
